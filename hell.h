@@ -14,8 +14,10 @@
 char* remov(char* str);
 int file(const char* dir, const char* file);
 int handle_exit(char* comm);
+int split_input(char* input, char** args);
+ssize_t get_line(char** lineptr, size_t* n, FILE* stream);
+int handle_env(const char* comm);
 int comm_execution(char* command);
 int main(void);
-int execve(const char *pathname, char *const argv[], char *const envp[]);
 
 #endif
