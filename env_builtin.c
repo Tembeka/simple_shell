@@ -1,10 +1,10 @@
 #include "hell.h"
 
 /**
+ * handle_env - Implement the env built-in
+ * @comm: str
  *
- *
- *
- *
+ * Return: 0 on success
  */
 
 int handle_env(char *comm)

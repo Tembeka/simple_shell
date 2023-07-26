@@ -1,13 +1,15 @@
 #include "hell.h"
 
 /**
+ *getline - getline func
+ *@lineptr: pointer var
+ *@n: input argument 
+ *@stream:  pointer to a FILE structure
  *
- *
- *
- *
+ * Return:num of chars,  -1 EOF.
  */
 
-ssize_t getline(char** lineptr, size_t* n, FILE* stream)
+ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 {
 	static char buffer[BUFFER_SIZE];
 	static char *buf_pos = buffer;
@@ -15,7 +17,7 @@ ssize_t getline(char** lineptr, size_t* n, FILE* stream)
 	
 	ssize_t chars_read = 0;
 	ssize_t total_chars = 0;
-	char* line = *lineptr;
+	char *line = *lineptr;
 
 	if (line == NULL || n == 0)
 	{

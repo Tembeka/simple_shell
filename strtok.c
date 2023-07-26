@@ -1,5 +1,13 @@
 #include "hell.h"
 
+/**
+ * split_input- splits argus
+ * @input: input str
+ * @args:an array of pointers 
+ *
+ * Return: args
+ */
+
 int split_input(char* input, char** args)
 {
 	int argc = 0;

@@ -1,10 +1,10 @@
 #include "hell.h"
 
 /**
+ * handle_exit- Implement the exit built-in, that exits the shell
+ * @comm: str
  *
- *
- *
- *
+ * Return: 0 on success
  */
 
 int handle_exit(char* comm)

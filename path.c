@@ -2,10 +2,10 @@
 
 /**
  * file - Handle the PATH 
- * @dir:
- * @file:
+ * @dir: directory
+ * @file: file
  *
- * Return:
+ * Return: o.
  */
 
 int file(const char* dir, const char* file)

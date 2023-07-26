@@ -10,6 +10,8 @@ int comm_execution(char *comm);
 
 int main(void)
 {
+	char* comm = NULL;
+	size_t comm_size = 0;
 	char comm[MAX_COMMAND_LENGTH];
 
 	while (1)
@@ -27,8 +29,10 @@ int main(void)
 		{
 			int result = comm_execution(trimmed_command);
 			int is_exit = handle_exit(trimmed_command);
+			int is_exit = handle_exit(trimmed_command);
 
-			if (is_exit)
+			if (is_exit){
+				free(comm);
 				break;
 			 int is_env = handle_env (trimmed_command);
 			 
@@ -42,5 +46,7 @@ int main(void)
 				 printf("Executon error.\n");
 		}
 	}
-	return (0);
+		{
+                free(comm);
+		return (0);
 }
